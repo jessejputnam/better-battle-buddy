@@ -1,9 +1,4 @@
 /* 
-
-Base font: 'Abel', sans-serif;
-Title font: 'Miltonian Tattoo', cursive;
-Computer font: 'VT323', monospace;
-
 TABLE OF CONTENTS
 # FONTS
 # LAYOUT
@@ -12,7 +7,6 @@ TABLE OF CONTENTS
 # FOOTER
 # ACTION STATES
 # MEDIA QUERIES
-
 */
 
 /* ###################################################
@@ -167,6 +161,14 @@ td {
   height: 20px;
   margin-bottom: -15px;
   margin-top: 5px;
+
+  padding: 2px;
+  cursor: pointer;
+  background-color: #cb6461;
+  color: white;
+  border-radius: 5px;
+  letter-spacing: 0.4px;
+  font-size: 0.8rem;
 }
 
 /* ###################################################
