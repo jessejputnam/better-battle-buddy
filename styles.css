@@ -64,6 +64,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overscroll-behavior-y: none;
 }
 
 header {
@@ -88,7 +89,6 @@ main {
   align-items: center;
   padding-bottom: 95px;
   height: 100vh;
-  overflow: hidden;
 }
 
 footer {
