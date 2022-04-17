@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+
+    <script src="./script.js" defer></script>
+
+    <title>Better Battle Buddy</title>
+  </head>
+
+  <body>
+    <div class="err__container">
+      <p class="err__msg">Error message</p>
+      <button type="button" class="btn" id="err-ok">OK</button>
+    </div>
+
+    <header class="header">
+      <h1>Better Battle Buddy</h1>
+    </header>
+
+    <main>
+      <div class="result__container">
+        <div class="poke__img__container">
+          <img
+            src="./images/question.png"
+            height="100px"
+            id="poke-img"
+            alt="Searched pokemon image"
+          />
+          <p id="poke-name">Name</p>
+          <p id="poke-type">Type</p>
+        </div>
+
+        <button type="button" class="btn" id="calc-dmg">Calculate Data</button>
+
+        <hr class="divider" />
+
+        <div class="poke__info__container">
+          <div class="poke__info__types">
+            <table class="types__table">
+              <tr>
+                <th class="txt--darkgreen">Weaknesses:</th>
+                <td id="poke-weak" class="txt--lightgreen"></td>
+              </tr>
+              <tr>
+                <th class="txt--darkred">Resistances:</th>
+                <td id="poke-resist" class="txt--lightred"></td>
+              </tr>
+              <tr></tr>
+            </table>
+          </div>
+
+          <hr class="divider" />
+
+          <button type="button" id="btn-suggest" class="btn">
+            Suggest Pokémon
+          </button>
+
+          <div class="poke__info__suggestions">
+            <h3 class="suggestions__title">Suggested Pokémon</h3>
+            <div class="suggestions__row">
+              <div class="suggestion__item">
+                <div class="suggestion__img">
+                  <img
+                    src="./images/question.png"
+                    height="50px"
+                    id="sugg-img-1"
+                  />
+                </div>
+                <div class="suggestion__info">
+                  <p class="suggestion__name" id="sugg-name-1"></p>
+                </div>
+              </div>
+
+              <div class="suggestion__item">
+                <div class="suggestion__img">
+                  <img
+                    src="./images/question.png"
+                    height="50px"
+                    id="sugg-img-2"
+                  />
+                </div>
+                <div class="suggestion__info">
+                  <p class="suggestion__name" id="sugg-name-2"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="suggestions__row">
+              <div class="suggestion__item">
+                <div class="suggestion__img">
+                  <img
+                    src="./images/question.png"
+                    height="50px"
+                    id="sugg-img-3"
+                  />
+                </div>
+                <div class="suggestion__info">
+                  <p class="suggestion__name" id="sugg-name-3"></p>
+                </div>
+              </div>
+
+              <div class="suggestion__item">
+                <div class="suggestion__img">
+                  <img
+                    src="./images/question.png"
+                    height="50px"
+                    id="sugg-img-4"
+                  />
+                </div>
+                <div class="suggestion__info">
+                  <p class="suggestion__name" id="sugg-name-4"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="search__container">
+        <form class="search__form">
+          <input type="txt" class="search__input" />
+          <div class="btn search__btn__container">
+            <img
+              src="./images/search.svg"
+              alt="search"
+              title="search"
+              class="btn search__btn"
+            />
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
