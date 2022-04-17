@@ -1,3 +1,5 @@
+live: https://jessejputnam.github.io/better-battle-buddy/
+
 # better-battle-buddy
 App for PokemonGo. Search up Pokemon and their weaknesses and resistances.
 
