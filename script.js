@@ -99,9 +99,11 @@ const getTypeDamage = function (pokeObj) {
 };
 
 const getPokemonData = function (search) {
-  let searched = Object.keys(nameCorrections).includes(search.toLowerCase())
-    ? nameCorrections[search.toLowerCase()]
-    : search.toLowerCase();
+  let searched = Object.keys(nameCorrections).includes(
+    search.trim().toLowerCase()
+  )
+    ? nameCorrections[search.trim().toLowerCase()]
+    : search.trim().toLowerCase();
 
   const formattedSearch = searched
     .split(" ")
