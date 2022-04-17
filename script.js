@@ -44,24 +44,6 @@ const getNewSearch = function () {
 
 const resetData = () => (curSelection = {});
 
-const resetDisplay = function () {
-  pokemonImg.src = "./images/question.png";
-  pokemonName.textContent = "Name";
-  pokemonType.textContent = "Type";
-  pokemonWeakness.textContent = "";
-  pokemonResistance.textContent = "";
-
-  suggestedPokemonImg1.src = "./images/question.png";
-  suggestedPokemonImg2.src = "./images/question.png";
-  suggestedPokemonImg3.src = "./images/question.png";
-  suggestedPokemonImg4.src = "./images/question.png";
-
-  suggestedPokemonName1.textContent = "";
-  suggestedPokemonName2.textContent = "";
-  suggestedPokemonName3.textContent = "";
-  suggestedPokemonName4.textContent = "";
-};
-
 const calcTypeDmg = function (pokeObj, type, dmg) {
   if (Object.keys(pokeObj.typeDmg).includes(type.name))
     pokeObj.typeDmg[type.name] *= typeRules[dmg];
@@ -117,12 +99,11 @@ const getTypeDamage = function (pokeObj) {
 };
 
 const getPokemonData = function (search) {
-  let searched = Object.keys(nameCorrections).includes(search)
-    ? nameCorrections[search]
-    : search;
+  let searched = Object.keys(nameCorrections).includes(search.toLowerCase())
+    ? nameCorrections[search.toLowerCase()]
+    : search.toLowerCase();
 
   const formattedSearch = searched
-    .toLowerCase()
     .split(" ")
     .join("-")
     .replace("'", "")
@@ -194,6 +175,24 @@ const getSuggestedPokemon = function () {
 // ###################################################
 //* ### Visual Logic
 // ###################################################
+const resetDisplay = function () {
+  pokemonImg.src = "./images/question.png";
+  pokemonName.textContent = "Name";
+  pokemonType.textContent = "Type";
+  pokemonWeakness.textContent = "";
+  pokemonResistance.textContent = "";
+
+  suggestedPokemonImg1.src = "./images/question.png";
+  suggestedPokemonImg2.src = "./images/question.png";
+  suggestedPokemonImg3.src = "./images/question.png";
+  suggestedPokemonImg4.src = "./images/question.png";
+
+  suggestedPokemonName1.textContent = "";
+  suggestedPokemonName2.textContent = "";
+  suggestedPokemonName3.textContent = "";
+  suggestedPokemonName4.textContent = "";
+};
+
 const displayPokemon = function () {
   try {
     if (!curSelection.pokemon) throw new Error("404");
