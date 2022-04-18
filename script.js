@@ -1,5 +1,14 @@
 "use strict";
 
+/*
+TABLE OF CONTENTS
+# DOM Variables
+# Data Logic
+# Visual Logic
+# App Flow
+# Data Variables
+*/
+
 // ###################################################
 //* ### DOM Variables
 // ###################################################
@@ -300,11 +309,11 @@ inputSearch.addEventListener("focus", () => {
 });
 
 // ###################################################
-//* ### Data Variables
+//* ### Data Variables /
 // ###################################################
 const bestOfTypes = {
   //prettier-ignore
-  bug: ["pinsir", "scizor", "genesect", "yanmega", "escavalier", "scolipede", "armaldo", "heracross", "scyther", "beedrill-mega", "durant"],
+  bug: ["pinsir", "scizor", "genesect", "yanmega", "escavalier", "scolipede", "armaldo", "heracross", "beedrill-mega", "durant"],
   //prettier-ignore
   dark: ["houndoom", "absol", "weavile", "darkrai", "hydreigon", "yveltal", "crawdaunt", "bisharp", "tyranitar", "pangoro", "honchkrow", "gyarados-mega", "houndoom-mega", "zarude", "absol-mega", "muk-alola", "greninja", "obstagoon", "zoroark"],
   //prettier-ignore
@@ -324,13 +333,13 @@ const bestOfTypes = {
   //prettier-ignore
   grass: ["venusaur", "torterra", "zarude", "roserade", "victreebel", "tangrowth", "sceptile", "celebi", "leafeon", "venusaur-mega", "tapu-bulu", "abomasnow-mega", "rillaboom", "virizion", "exeggutor", "exeggutor-alola", "chesnaught", "decidueye"],
   //prettier-ignore
-  ground: ["garchomp", "mamoswine", "landorus-therian", "groudon", "excadrill", "rhyperior", "swampert", "hippowdon", "donphan", "torterra", "golem", "flygon", "steelix-mega", "landorus-incarnate", "zygarde-50", "rhydon", "krookodile"],
+  ground: ["garchomp", "mamoswine", "landorus-therian", "groudon", "excadrill", "rhyperior", "swampert", "hippowdon", "donphan", "torterra", "golem", "flygon", "steelix-mega", "landorus-incarnate", "zygarde-50", "krookodile"],
   //prettier-ignore
-  ice: ["mamoswine", "abomasnow", "darmanitan-galar-standard", "weavile", "glaceon", "articuno", "vanilluxe", "jynx", "kyurem", "beartic", "abomasnow-mega", "glaceon", "regice", "cryogonal", "walrein", "lapras"],
+  ice: ["mamoswine", "abomasnow", "darmanitan-galar-standard", "weavile", "glaceon", "articuno", "vanilluxe", "jynx", "kyurem", "beartic", "abomasnow-mega", "regice", "cryogonal", "walrein", "lapras"],
   //prettier-ignore
   normal: ["porygon-z", "regigigas", "lopunny", "snorlax", "ursaring", "staraptor", "blissey", "girafarig", "slaking", "unfezant", "pidgeot-mega", "lopunny-mega", "bewear", "braviary", "staraptor", "stoutland", "bouffalant"],
   //prettier-ignore
-  poison: ["victreebel", "roserade", "vileplume", "muk", "toxicroak", "venusaur", "scolipede", "nidoqueen", "skuntank", "gengar", "crobat", "gengar-mega", "venusaur-mega", "beedrill-mega", "muk-alola", "slowking-galar", "nidoking", "nidoqueen"],
+  poison: ["victreebel", "roserade", "vileplume", "muk", "toxicroak", "venusaur", "scolipede", "nidoqueen", "skuntank", "gengar", "crobat", "gengar-mega", "venusaur-mega", "beedrill-mega", "muk-alola", "slowking-galar", "nidoking"],
   //prettier-ignore
   psychic: ["mewtwo", "hoopa-unbound", "metagross", "alakazam", "exeggutor", "latios", "espeon", "azelf", "mew", "celebi", "jirachi", "victini", "delphox", "meloetta-aria", "slowbro-mega", "lugia", "latias", "tapu-lele", "hoopa", "deoxys-normal", "deoxys-attack", "gardevoir", "gallade", "alakazam-mega", "deoxys-speed"],
   //prettier-ignore
@@ -338,7 +347,7 @@ const bestOfTypes = {
   //prettier-ignore
   steel: ["metagross", "dialga", "aggron", "excadrill", "scizor", "genesect", "jirachi", "empoleon", "heatran", "bisharp", "zacian", "zamazenta", "steelix-mega", "melmetal", "magnezone", "cobalion", "escavalier", "lucario"],
   //prettier-ignore
-  water: ["blastoise", "gyarados", "kyogre", "swampert", "kingler", "feraligatr", "empoleon", "clawitzer", "vaporeon", "greninja", "palkia", "suicune", "gyarados-mega", "blastoise-mega", "slowbro-mega", "manaphy", "wishiwashi-school", "primarina", "milotic", "swampert", "inteleon", "empoleon", "tapu-fini", "drednaw"]
+  water: ["blastoise", "gyarados", "kyogre", "swampert", "kingler", "feraligatr", "empoleon", "clawitzer", "vaporeon", "greninja", "palkia", "suicune", "gyarados-mega", "blastoise-mega", "slowbro-mega", "manaphy", "wishiwashi-school", "primarina", "milotic", "swampert", "inteleon", "tapu-fini", "drednaw"]
 };
 
 // prettier-ignore
