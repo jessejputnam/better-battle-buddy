@@ -81,6 +81,7 @@ main {
   flex-direction: column;
   align-items: center;
   padding-bottom: 95px;
+  min-height: 90vh;
 }
 
 footer {
