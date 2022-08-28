@@ -1,7 +1,8 @@
 live: https://jessejputnam.github.io/better-battle-buddy/
 
 # better-battle-buddy
-App for PokemonGo. Search up Pokemon and their weaknesses and resistances.
+‣ A PokémonGo helper app that allows users to input opponent Pokemon names and ascertain effective offensive types as well as suggested Pokémon to use against opponent
+‣ Focus on promises, asynchronous JS, and API calls
 
 ## Table of contents
 
